@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
+   <title>Klarna Payment Remake</title>
+   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
+      a {
+         color: #0000ff;
+         text-decoration: underline;
+      }
+      .footer, .footer a {
+         font-size: 10px!important;
+         line-height: 14px!important;
+      }
+      @media screen and (max-width: 599.98px) {
+         .logo-columns .padding,
+         .next-payment-columns .padding,
+         .payment-columns .padding,
+         .payment-message-columns .padding,   
+         .faq-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
+         .logo-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+            text-align: center!important;
+            width:500px!important;
+         }
+         .logo-columns .padding2 {
+            padding-right: 0!important;
+            padding-left: 0!important;
+            width: 50%!important;
+         }
+         .two-third-columns .padding.first{
+            padding-bottom: 0!important;
+         }
+         .two-third-columns .padding.last{
+            padding-top: 0!important;
+         }
+         img.one-third-col-img,
+         img.three-col-img-last {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         .two-third-columns .content {
+            text-align: center!important;
+         }
+         .banner {
+            height: auto!important;
+            padding-top: 40px!important;
+            padding-bottom: 60px!important;
+         }
+      }
+      @media screen and (max-width: 399.98px) {
+         .banner {
+            padding-top: 10px!important;
+            padding-bottom: 40px!important;
+         }
+         .button {
+            padding: 12px 50px!important;
+         }
+      }
+
+      /* Custom Dark Mode Colors */
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+         body, center, table {
+            background: #2d2d2d!important;
+            color: #ffffff!important;
+         }
+         .darkmode-transparent {
+            background-color: transparent!important;
+         }
+      }
+   </style>
+
+   <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         table {border-collapse: collapse!important;}
+      </style>
+   <![endif]-->
+</head>
+
+<body style="Margin: 0;padding: 0;min-width: 100%;background-color: #000000;">
+          <!--[if (gte mso 9)|(IE)]>
+             <style type="text/css">
+               body {background-color: #ffffff!important;}
+               body, table, td, p, a {font-family: Arial, sans-serif!important;}
+            </style>
+         <![endif]-->
+
+    <center style="width: 100%;table-layout: fixed;background-color: #F5F5F6;">
+         <div style="max-width: 600px; background-color: ffffff;">
+
+
+               <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule: exactly;display: none;max-width: 0;max-height: 0;opacity: 0;overflow: hidden;mso-hide: all;">
+               Your next payment is due soon!
+               </div>
+
+               <!--[if (gte mso 9)|(IE)]>
+               <table width="600" align="center" style="border-spacing: 0;color: #000000;" role="presentation">
+                <tr>
+               <td style="padding: 0;">
+               <![endif]-->
+
+            <table align="center" style="border-spacing: 0;color: #000000;font-family: Arial, sans-serif!important;background-color: #ffffff;Margin: 0;padding: 0;width: 100%;max-width: 600px;" role="presentation">
+<!-- START LOGO -->
+      <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="background-color: #F5F5F6;border-spacing: 0;" role="presentation">
+               <tr>
+                  <td style="padding: 20px 0 10px 10px;text-align: left;" class="">
+                     <a href="#" target="_blank"><img class="width-50" src="Images/klarnalogo.png" alt="Klarna Logo" style="max-width: 80px"></a>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>  
+<!-- END LOGO -->
+<!-- START SAKS-->
+<tr>
+   <td style="padding: 10px 0 0;background-color: #F5F5F6;" class="">
+      <table width="100%" style="border-spacing: 0;" role="presentation">
+      <tr>
+            <td class="logo-columns" style="padding: 0;font-size: 0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table role="presentation">
+                  <tr>
+                  <td width="500" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 500px;display: inline-block;" role="presentation">
+               <tr>
+                     <td class="padding" style="padding: 10px 0 20px 0px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                        <tr>
+                              <td>
+                                 <p style="font-family: Arial, sans-serif;font-size: 40px;font-weight: 600;padding-bottom: 0;text-align: left;Margin: 0;">Saks Fifth Avenue</p>
+                                 <p style="font-family: Arial, sans-serif;font-size: 20px;text-align: left;padding: 12px 0;Margin: 0;">Order no: G2R0PS5K-1</p>
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="100" valign="bottom" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column" style="border-spacing: 0;vertical-align: bottom;width: 50%;max-width: 100px;display: inline-block;" role="presentation">
+               <tr>
+                     <td class="padding" style="padding:20px 0 20px 0px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: right;" role="presentation">
+                        <tr>
+                              <td>
+                               <a href="http://example.com" target="_blank"><img class="width-50" src="Images/saksicon.png" alt="Saks &lt; Fifth Logo" style="max-width: 60px;border-radius: 50%;"></a>
+                              </td>
+                           </tr>
+
+                        </table>
+                        
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table> 
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END SAKS -->
+<!--START NEXT PAYMENT MESSAGE-->   
+<tr>
+      <td style="padding: 0px 0 0;background-color: #ffffff;">
+         <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+         <tr>
+               <td class="next-payment-columns" style="padding: 0;font-size: 0;text-align: center;background-color: #ffffff;">
+                  <!--[if (gte mso 9)|(IE)]>
+                     <table role="presentation">
+                     <tr>
+                     <td width="400" valign="top" style="padding: 0;"> 
+                  <![endif]-->
+   
+                  <table class="column-1" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 400px;display: inline-block;" role="presentation">
+                  <tr>
+                        <td class="padding" style="padding: 35px 20px 35px 25px;">
+   
+                           <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                           <tr>
+                                 <td>
+                                  <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:0;text-align: left;Margin: 0;color: #000000;">Next payment on March 26
+                                 </p></td>
+                              </tr>
+                           </table>                           
+                        </td>
+                     </tr>
+                  </table>
+   
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50" valign="top" style="padding: 0;"> 
+                  <![endif]-->
+                              <table class="column-2" style="border-spacing:0;vertical-align: top;width: 50%;max-width: 50px;display: inline-block;" role="presentation">
+                              <tr>
+                                    <td class="padding" style="padding: 35px 5px;">
+   
+                                       <table class="content" style="border-spacing: 0;text-align: right;" role="presentation">
+                                       <tr>
+                                             <td>
+                                                <a href="https://example.com" target="_blank"><img src="Images/mastercard.png" alt="Mastercard Image" style="max-width: 40px;"></a>
+                                             </td>
+                                          </tr>
+                                       </table> 
+                                    </td>
+                                 </tr>
+                              </table>
+                                          
+                              <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="50" valign="top" style="padding: 0;"> 
+                              <![endif]-->
+            
+                                       <table class="column-3" style="border-spacing:0;vertical-align: top;width: 50%;max-width: 150px;display: inline-block;" role="presentation">
+                                       <tr>
+                                             <td class="padding" style="padding: 40px 10px 0 10px;">
+                                                <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                                <tr>
+                                                      <td>                                               
+                                                         <p style="font-family: Arial, sans-serif;font-size: 18px;font-weight: normal;padding-bottom: 0;text-align: left;Margin: 0;"> •••• 0000</p>
+                                                      </td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>       
+                  <!--[if (gte mso 9)|(IE)]>
+                     </td>
+                     </tr>
+                     </table> 
+                  <![endif]--> 
+               </td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+<!-- END NEXT PAYMENT MESSAGE -->
+<!-- START PAYMENT BAR-->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #ffffff;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+         <tr>
+            <td class="payment-columns" style="padding: 0;font-size: 0;text-align: center;background-color: #ffffff;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table role="presentation">
+                  <tr>
+                  <td width="150" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+                  <table class="column-1" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 150px;display: inline-block;" role="presentation">
+                     <tr>
+                        <td class="padding" style="padding: 10px 20px 10px 30px;">
+                           <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                              <tr>
+                                 <td>
+                                    <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:10px;text-align: left;Margin: 0;color: #1c120f;">$51.98</p>
+                                    <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: left;Margin: 0;color: #787471;line-height: 1.5;">Paid</p>                             
+                                 </td>
+                              </tr>
+                           </table>                       
+                        </td>
+                     </tr>
+                  </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="150" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+                        <table class="column-2" style="border-spacing:0;vertical-align: top;width: 100%;max-width: 150px;display: inline-block;" role="presentation">
+                           <tr>
+                              <td class="padding" style="padding:10px 20px 10px 20px;">
+                                 <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                    <tr>
+                                       <td>
+                                          <p style="font-family: Arial, Helvetica, sans-serif;font-size:18px;font-weight:bold;padding-bottom:10px;text-align: center;Margin: 0;color: #07824f;">$51.98</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: center;Margin: 0;color: #787471;line-height: 1.5;">Paid</p>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="150" valign="top" style="padding: 0;"> 
+                        <![endif]-->
+
+                     <table class="column-3" style="border-spacing:0;vertical-align: top;width: 100%;max-width: 150px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding:10px 20px 10px 20px;">
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:10px;text-align: center;Margin: 0;color: #1c120f;">$51.98</p>
+                                       <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: center;Margin: 0;color: #787471;line-height: 1.5;">Mar 26</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="150" valign="top" style="padding: 0;"> 
+                        <![endif]-->
+
+                     <table class="column-4" style="border-spacing:0;vertical-align: top;width: 100%;max-width: 150px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding:10px 10px 10px 20px;">
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:10px;text-align: right;Margin: 0;color: #1c120f;">$51.98</p>
+                                       <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: right;Margin: 0;color: #787471;line-height: 1.5;">Apr 9</p>
+                                    </td>
+                                 </tr>
+                              </table>                  
+                           </td>
+                        </tr>
+                     </table>
+            <!--[if (gte mso 9)|(IE)]>
+               </td>
+               </tr>
+               </table> 
+            <![endif]-->
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!--END PAYMMENT BAR-->
+<!--START BUTTON-->
+<tr>
+   <td style="text-align: left;padding: 10px 20px 40px 30px;line-height: 1.5;width: 100%;max-width: 600px;">
+      <a class="button" href="https://example.com" target="_blank" style="font-size: 17px; font-weight: normal;text-decoration:none;color:#ffffff;background-color: #000000;border:1px solid #000000;border-radius: 0px;padding: 10px 20px;display: inline-block;">Pay off early</a>
+   </td>
+</tr> 
+<!-- END BUTTON-->
+<!--START PAYMENT MESSAGE-->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #ffffff;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+         <tr>
+            <td class="payment-message-columns" style="padding: 0;font-size: 0;text-align: center;background-color: #d7bbd4;">
+               <!--[if (gte mso 9)|(IE)]>
+               <table role="presentation">
+               <tr>
+               <td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="payment-message-1" style="border-spacing: 0;vertical-align: top;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                  <tr>
+                     <td class="padding" style="padding: 40px 20px 40px 25px;">
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                           <tr>
+                              <td>
+                                 <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:0;text-align: left;Margin: 0;color: #000000;">Never miss a payment! <br>You can update your card anytime in the app. </p>
+                              </td>
+                           </tr>
+                        </table>               
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="payment-message-2" style="border-spacing:0;vertical-align: top;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                  <tr>
+                     <td class="padding" style="padding:40px 25px 40px 20px;">
+                       <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                           <tr>
+                              <td>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:0;text-align: left;Margin: 0;color: #000000;" class="">Sending something back?<br>Let us know by reporting your return.</p>
+                              </td>
+                            </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>         
+                     <!--[if (gte mso 9)|(IE)]>
+                     </td>
+                     </tr>
+                     </table> 
+                     <![endif]-->
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!--END MESSAGE PAYMENT-->
+<!-- START MIDDLE IMAGE -->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #ffffff;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+        <tr>
+            <td class="middle-img-columns" style="padding: 0;font-size: 0;text-align: center;background-color: #ffffff;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table role="presentation">
+                  <tr>
+                  <td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column-1" style="border-spacing: 0;vertical-align: bottom;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                 <tr>
+                     <td class="padding" style="padding: 40px 20px 40px 40px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                          <tr>
+                              <td>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:35px;font-weight:bold;padding-bottom:5px;text-align: left;Margin: 0;color: #000000;">Pay even later?</p>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:17px;font-weight:normal;padding-bottom:0;text-align: left;Margin: 0;color: #000000;">Extend the due date of your payment plan to fit your schedule. Once per order.<br>
+                               </p><p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding: 15px 0px 5px 0px;text-align: left;Margin: 0;color: #000000;"><a href="http://example.com"> Extend due date</a><br>
+                              </p></td>
+                           </tr>
+                        </table>
+                        
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column-2" style="border-spacing:0;vertical-align: top;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                 <tr>
+                     <td class="padding" style="padding:40px 25px 20px 0px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                          <tr>
+                              <td>
+                               <a href="#" target="_blank"><img class="width-50" src="Images/duedategraphic.jpg" alt="Due Date Graphic" style="max-width: 300px"></a>
+                              </td>
+                           </tr>
+                        </table>
+                  
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table> 
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END MIDDLE IMAGE-->
+<!--START SURVEY MESSAGE-->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #F0EEEB;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+         <tr>
+           <td style="text-align: left;padding: 10px 20px 0 30px;line-height: 1.5;width: 100%;max-width: 600px;">
+               <p style="color: #303030;font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">How is your experience with Klarna so far?</p>
+           </td>
+           </tr>
+           <tr>
+               <td style="text-align: left;padding: 10px 20px 30px 30px;line-height: 1.5;width: 100%;max-width: 600px;">
+                   <a href="https://example.com" target="_blank" style="font-size: 17px; font-weight: normal;text-decoration:none;color:#000000;background-color: #F0EEEB;border:1px solid #000000;border-radius: 50px;padding: 10px 20px;display: inline-block;">Great</a>
+                   <a href="https://example.com" target="_blank" style="font-size: 17px; font-weight: normal;text-decoration:none;color:#000000;background-color: #F0EEEB;border:1px solid #000000;border-radius: 50px;padding: 10px 15px;display: inline-block;">Could be better</a>
+               </td>
+               </tr> 
+       </table>
+   </td>
+</tr>
+<!--END SURVEY MESSAGE-->
+<!--START FAQ-->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #ffffff;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+        <tr>
+           <td style="text-align: left;padding: 10px 20px 0 30px;line-height: 1.5;width: 100%;max-width: 600px;">
+               <p style="color: #000000;font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">FAQ</p>
+           </td>
+           </tr>
+       </table>
+   </td>
+</tr>
+<!--END FAQ-->
+<!--START FAQ MESSAGE-->
+<tr>
+   <td style="padding: 0px 0 0;background-color: #ffffff;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+        <tr>
+            <td class="faq-columns" style="padding: 0;font-size: 0;text-align: center;background-color: #ffffff;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table role="presentation">
+                  <tr>
+                  <td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column-1" style="border-spacing: 0;vertical-align: top;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                 <tr>
+                     <td class="padding" style="padding: 10px 20px 10px 30px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                          <tr>
+                              <td>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:10px;text-align: left;Margin: 0;color: #000000;">"How do I return my goods?"</p>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: left;Margin: 0;color: #000000;line-height: 1.5;">First, follow the return instructions for Saks Fifth Avenue, and then use the 'Report a return' option in the Klarna app to pause your upcoming payment(s).</p>
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding: 0;"> 
+               <![endif]-->
+
+               <table class="column-2" style="border-spacing:0;vertical-align: top;width: 50%;max-width: 300px;display: inline-block;" role="presentation">
+                 <tr>
+                     <td class="padding" style="padding:10px 20px 10px 20px;">
+
+                        <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                          <tr>
+                              <td>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;padding-bottom:10px;text-align: left;Margin: 0;color: #000000;">"How do I report a problem?"</p>
+                               <p style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;padding-bottom:0;text-align: left;Margin: 0;color: #000000;line-height: 1.5;">If you have any issues with your order or payments, let us know by using the "Report a problem" feature in the Klarna app.</p>
+                              </td>
+                           </tr>
+                        </table>
+                  
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table> 
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td style="padding: 0 0 20px;">
+        <table width="100%" style="background-color: #ffffff;border-spacing: 0;max-width: 600px;" role="presentation">
+         <tr>
+                <td style="text-align: left;padding: 10px 0 0 30px;line-height: 1.5;width: 100%;max-width: 600px;">
+                    <p style="color: #303030;font-weight: normal;font-size: 14px;font-family: Arial, Helvetica, sans-serif;"> <a href="http://example.com">View more FAQs in the Klarna app </a></p>
+                 </td>
+            </tr>
+            <tr>
+                  <td style="padding: 0 30px 0 30px;line-height: 1.5;width: 600px;text-align: left;">
+                     <p style="color: #303030;font-size: 16px;font-family: Arial, Helvetica, sans-serif;">You are also welcome to contact us via <a href="http://example.com"> klarna.com</a> for questions about your payment.</p>
+                  </td>
+         </tr>
+      </table>
+    </td>
+</tr>
+<!--END FAQ MESSAGE-->
+<!-- START SOCIAL ICONS -->
+      <tr>
+          <td style="padding: 5px 0 15px 30px;text-align: left;">
+              <a href="http://example.com" target="_blank"><img src="Images/klarnaicon.png" alt="Klarna" style="width: 100%;max-width: 25px" ></a>
+          </td>
+      </tr>
+  <tr>
+      <td style="padding: 0;">
+          <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+            <tr>
+                  <td style="text-align: left;padding: 10px 0 5px 30px;">
+          
+                  <a href="http://example.com" target="_blank"><img src="Images/facebookicon.png" style="padding-right:8px;" alt="Facebook" title="Facebook" width="8"></a>
+                  <a href="http://example.com" target="_blank"><img src="Images/instagramicon.png" style="padding-right:8px;" alt="Instagram" title="Instagram" width="16"></a>
+                  <a href="http://example.com" target="_blank"><img src="Images/twittericon.png" style="padding-right:8px;" alt="Twitter" title="Twitter" width="16"></a>
+                  <a href="http://example.com" target="_blank"><img src="Images/linkedinicon.png" style="padding-right:8px;" alt="LinkedIn" title="LinkedIn" width="16"></a>
+
+                  </td>
+              </tr>
+          </table>
+      </td>
+   </tr>
+<!-- END SOCIAL ICONS -->
+<!-- START FOOTER -->
+<tr>
+   <td style="padding: 0;">
+      <table width="100%" style="background-color: #ffffff;border-spacing: 0;" role="presentation">
+      <tr>
+            <td style="text-align: left;padding: 10px 0 40px 30px;">
+               <p style="font-family: Arial, Helvetica, sans-serif;color: #000000;font-size: 17px; letter-spacing: 2.5px;Margin: 0;">Klarna Inc.
+                  <br> PO Box 8116
+                  <br> Columbus, OH 43201
+                  <br><a href="https://example.com">klarna.com</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+</table>
+<!-- END FOOTER -->
+
+            
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+             </tr>
+            </table>
+            <![endif]-->
+         </div>
+   </center>
+</body>
